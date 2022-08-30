@@ -3,8 +3,9 @@ function myFunction(auth) {
 }
 
 function call(auth){
-	
 	var xmlhttp = new XMLHttpRequest();
+	
+	//alert("Iniciando");
     //xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
     xmlhttp.open("POST", "https://nexusforinsurance-dev.sbp.eyclienthub.com/nexuscommon/ni/nexus-wiremock-app/dev/wiremock/services/commercial-sme-policy/methods/get", false);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
@@ -18,7 +19,8 @@ function call(auth){
 	response_header_style.display = 'table-row';
 	response_body_style.display = 'table-row';
 	
-	document.getElementById("response").innerHTML = JSON.stringify(JSON.parse(xmlhttp.responseText), null, 4);
+	//alert("Terminando");
+	document.getElementById("response").innerHTML = auth + JSON.stringify(JSON.parse(xmlhttp.responseText), null, 4);
 }
 
 function callbackFunction(xmlhttp) 
