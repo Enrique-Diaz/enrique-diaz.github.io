@@ -1,0 +1,70 @@
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border:none;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+}
+
+.table thead th {
+  background: white;
+  cursor: pointer;
+}
+
+.table thead th.header-label {
+  cursor: pointer;
+  background: linear-gradient(0deg, #e4eff8, #4578a2 5%, #e4eff8 150%);
+  color: white;
+}
+
+
+.table th,
+.table td {
+  padding: 0.2rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table .th-submit {
+  padding: 0.2rem 0.5rem;
+  text-align: right;
+}
+
+
+.table .tr-inputs th {
+  position: relative;
+  padding: 0;
+  padding-bottom: 1.2rem;
+  margin: 0;
+}
+
+.table .tr-inputs div {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.table .tr-inputs .th-auth input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.table input {
+  float: right;
+  clear: both;
+  box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+       -moz-box-sizing: border-box; /* FF1+ */
+            box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}
