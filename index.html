@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<table class="table" border=0>
+  <thead>
+  	<tr>
+      <th class="header-label" colspan="3">Header</th>
+    </tr>
+  	<tr class="tr-inputs">
+      <th>Authorization</th>
+      <th width=5%></th>
+      <th class="th-auth">
+        <div><input id="auth" type="text" name="auth"></div>
+      </th>
+    </tr>
+    <tr>
+      <th class="header-label" colspan="3">Request</th>
+    </tr>
+    <tr class="tr-inputs">
+      <th>Body</th>
+      <th width=5%></th>
+      <th height=100>
+        <div><textarea id="body" wrap="off"></textarea></div>
+      </th>
+    </tr>
+    <tr class="tr-inputs">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="tr-inputs">
+      <th></th>
+      <th width=5%></th>
+      <th width=100%><input type="submit" value="Call API" onclick="call(document.getElementById('auth').value)"></th>
+    </tr>
+	<tr id="response-header" style="display:none;">
+      <th class="header-label" colspan="3">Response</th>
+    </tr>
+    <tr id="response-body" class="tr-inputs" style="display:none;">
+      <th>Body</th>
+      <th width=5%></th>
+      <th height=100 colspan="3">
+        <div><textarea id="response" wrap="off"></textarea></div>
+      </th>
+    </tr>
+  </thead>
+</table>
+
+<script type="text/javascript" src="Test.js"></script>
+
+</body>
+</html>
